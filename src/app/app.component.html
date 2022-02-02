@@ -1,0 +1,26 @@
+<hello name="{{ name }}"></hello>
+<div>
+  <div>
+    <h4>Convert Fahrenheit to Celsius</h4>
+    <div>
+      Enter value in Fahrenheit:
+      <input type="text" [(ngModel)]="fahrenheit" />
+      <div>
+        <strong>Temperature in Celsius:</strong>
+        {{ fahrenheit | temperatureConverer: 'C' }}
+      </div>
+    </div>
+  </div>
+  <br />
+  <div>
+    <h4>Convert Celsius to Fahrenheit</h4>
+    <div>
+      Enter value in Celsius:
+      <input type="text" [(ngModel)]="celsius" />
+      <div>
+        <strong>Temperature in Fahrenheit:</strong>
+        {{ celsius | temperatureConverer: 'F' }}
+      </div>
+    </div>
+  </div>
+</div>
